@@ -71,7 +71,7 @@ const Contact = () => {
 					<div className='lg:w-1/2 md:w-2/3 mx-auto'>
 						<div
 							hidden={!Ok}
-							className='text-center text-lg rounded-lg bg-green-400 w-1/2 m-auto text-black mb-1 pb-2'>
+							className='text-center text-lg rounded-lg bg-green-400 w-1/3 m-auto text-black mb-1 py-1'>
 							Sent!
 						</div>
 						<div className='flex flex-wrap -m-2'>

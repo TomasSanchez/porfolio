@@ -72,7 +72,7 @@ const Contact = () => {
 						{/* FIX mails and delete warning */}
 						<div
 							hidden={!Ok}
-							className='text-center text-lg rounded-lg bg-red-400 w-1/3 m-auto text-black mb-1 py-1'>
+							className='text-center text-lg rounded-lg bg-red-400 w-1/2 m-auto text-black mb-1 py-2'>
 							Currently form contanct is under development. Sorry!
 						</div>
 						{/* end of warning */}
@@ -148,15 +148,15 @@ const Contact = () => {
 									/>
 								</div>
 							</div>
-							<div className='p-2 w-full'>
+							<div className='pt-2 w-full'>
 								<button
 									disabled={!inputSanitazion()}
 									onClick={handleSubmit}
-									className='flex mx-auto text-white bg-green-700 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
+									className='flex mx-auto text-white bg-green-700 border-0 p-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
 									Send
 								</button>
 							</div>
-							<div className='px-2 mb-3 w-full pt-8 mt-4 border-t border-gray-800 text-center'>
+							<div className='px-2 mb-3 w-full pt-2 mt-4 border-t border-gray-800 text-center'>
 								<a
 									href='mailto: tomas.solano.sanchez@gmail.com'
 									className='text-blue-400 hover:underline'>

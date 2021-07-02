@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 const mail = require("@sendgrid/mail");
 
-mail.setApiKey(process.env.NEXT_PUBLIC_SENGRID_API_KEY);
+mail.setApiKey(process.env.SENGRID_API_KEY);
 
 type Data = {
 	email: "";
@@ -25,8 +25,8 @@ export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
 		text: message,
 		html: message.replace(/\r\n/g, "<br>"),
 	};
-	console.log(process.env.NEXT_PUBLIC_SENGRID_API_KEY);
-	console.log("sendg in conf: ", process.env.CONFG_SENGRID_API_KEY);
+	console.log(process.env.SENGRID_API_KEY);
+
 	try {
 		mail.send(data);
 		res.status(200).json({

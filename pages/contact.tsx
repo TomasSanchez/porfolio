@@ -9,7 +9,7 @@ type formType = {
 };
 
 const Contact = () => {
-	const [Ok, toggleOk] = useState(false);
+	const [Ok, toggleOk] = useState(true);
 	const [emailForm, setEmailForm] = useState<formType>({
 		email: "",
 		subject: "",
@@ -69,8 +69,16 @@ const Contact = () => {
 						</p>
 					</div>
 					<div className='lg:w-1/2 md:w-2/3 mx-auto'>
+						{/* FIX mails and delete warning */}
 						<div
 							hidden={!Ok}
+							className='text-center text-lg rounded-lg bg-red-400 w-1/3 m-auto text-black mb-1 py-1'>
+							Currently form contanct is under development. Sorry!
+						</div>
+						{/* end of warning */}
+						<div
+							hidden={true}
+							// hidden={!Ok}
 							className='text-center text-lg rounded-lg bg-green-400 w-1/3 m-auto text-black mb-1 py-1'>
 							Sent!
 						</div>

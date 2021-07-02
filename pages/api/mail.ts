@@ -25,6 +25,7 @@ export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
 		text: message,
 		html: message.replace(/\r\n/g, "<br>"),
 	};
+	console.log(process.env.SENGRID_API_KEY);
 	try {
 		mail.send(data);
 		res.status(200).json({

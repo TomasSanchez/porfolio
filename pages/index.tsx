@@ -31,7 +31,7 @@ export default function Home() {
 					description={"some website using this and that"}
 				/>
 			</div>
-			<div className='flex-1 flex flex-col'></div>
+			<div className='flex-1 flex flex-col w-1/4'></div>
 		</div>
 	);
 }

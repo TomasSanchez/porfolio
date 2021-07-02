@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<div className='bg-gray-800 h-full'>
+		<div className='bg-gray-800 h-screen relative table md:block pb-24'>
 			<Navbar />
 			<Component {...pageProps} />
 			<Footer />

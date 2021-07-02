@@ -81,7 +81,7 @@ const Contact = () => {
 									Send
 								</button>
 							</div>
-							<div className='p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center'>
+							<div className='px-2 mb-3 w-full pt-8 mt-4 border-t border-gray-800 text-center'>
 								<a className='text-blue-500'>
 									tomas.solano.sanchez@gmail.com
 								</a>

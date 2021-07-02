@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<div className='bottom-0 absolute w-full h-26 bg-gray-900 body-font'>
+		<div className='bottom-0 absolute w-full h-26 bg-gray-900 body-font m-auto '>
 			<div className='bg-gray-900'>
 				<div className='border-b-2 border-green-700 w-10/12 relative m-auto'></div>
 				{/* <div className='border-b-2 border-gray-500 w-10/12 relative m-auto'></div> */}
@@ -34,7 +34,7 @@ const Footer = () => {
 						<a
 							href='//www.linkedin.com/in/tomassolanosanchez'
 							target='_blank'
-							className='ml-3 text-gray-200'>
+							className='ml-3 text-gray-200 mr-16'>
 							<svg
 								fill='currentColor'
 								stroke='currentColor'

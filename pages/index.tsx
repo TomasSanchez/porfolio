@@ -12,7 +12,7 @@ export default function Home() {
 					content='initial-scale=1.0, width=device-width'
 				/>
 			</Head>
-			<div className='flex flex-col md:flex-row bg-gray-800 overflow-hidden pt-4'>
+			<div className='flex flex-col md:flex-row bg-gray-800 pt-4 justify-self-stretch'>
 				<div className=' md:border-r-2 border-green-700 flex-1 max-w-md justify-center md:block m-auto md:mt-1'>
 					<Profile />
 				</div>

@@ -33,6 +33,7 @@ export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
 			message: body.message,
 		});
 		console.log("sent");
+		console.log("key: ", process.env.NEXT_PUBLIC_SENGRID_API_KEY);
 	} catch (error) {
 		console.error(error);
 	}

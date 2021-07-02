@@ -33,6 +33,7 @@ export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
 			subject: body.subject,
 			message: body.message,
 		});
+		console.log("sent");
 	} catch (error) {
 		console.error(error);
 	}

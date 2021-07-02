@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # next.js build output
-.next
+# .next
 
 # dotenv environment variables file (build for Zeit Now)
 .env
@@ -24,11 +24,11 @@ yarn-error.log*
 /coverage
 
 # next.js
-/.next/
+# /.next/
 /out/
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store

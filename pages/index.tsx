@@ -3,8 +3,8 @@ import Main from "../components/Main";
 
 export default function Home() {
 	return (
-		<div className='flex flex-row bg-gray-800 overflow-hidden pt-4'>
-			<div className=' border-r-2 border-green-700 flex-1 max-w-md justify-center hidden md:block'>
+		<div className='flex flex-col md:flex-row bg-gray-800 overflow-hidden pt-4'>
+			<div className=' md:border-r-2 border-green-700 flex-1 max-w-md justify-center md:block m-auto md:mt-1'>
 				<Profile />
 			</div>
 			<div className='flex-1  flex flex-col '>

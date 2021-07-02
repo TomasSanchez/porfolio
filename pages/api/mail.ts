@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 const mail = require("@sendgrid/mail");
 
-mail.setApiKey(process.env.SENGRID_API_KEY);
+mail.setApiKey(process.env.NEXT_PUBLIC_SENGRID_API_KEY);
 
 type Data = {
 	email: "";

@@ -25,8 +25,8 @@ const Contact = () => {
 			emailForm.message.length < 80 &&
 			emailForm.subject.length < 40 &&
 			emailForm.email.length > 0 &&
-			emailForm.message.length > 0 &&
-			emailForm.subject.length > 0
+			emailForm.message.length >= 0 &&
+			emailForm.subject.length >= 0
 		);
 	};
 

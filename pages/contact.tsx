@@ -44,6 +44,7 @@ const Contact = () => {
 				message: "",
 			});
 			toggleOk(true);
+			console.log(process.env.SENGRID_API_KEY);
 		}
 	};
 

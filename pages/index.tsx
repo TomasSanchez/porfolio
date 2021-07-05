@@ -18,24 +18,32 @@ export default function Home() {
 				</div>
 				<div className='flex-1  flex flex-col '>
 					<Main
-						url={""}
-						img={"/testing_img.png"}
-						description={"some website using this and that"}
+						url={"https://github.com/TomasSanchez/Django-Ecommerce"}
+						url_as={"github"}
+						img={"/Ecommerce.png"}
+						description={
+							"e-commerce website built with django rest, and react in nextJs. In development"
+						}
 					/>
 					<Main
 						url={""}
+						url_as={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
-						description={"some website using this and that"}
+						description={""}
 					/>
 				</div>
 				<div className='flex-1 flex flex-col '>
 					<Main
-						url={""}
-						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
-						description={""}
+						url={"https://github.com/TomasSanchez/Django-BasicBlog"}
+						url_as={"github"}
+						img={"Blog Home.png"}
+						description={
+							"Blog using Django and Next. In development"
+						}
 					/>
 					<Main
 						url={""}
+						url_as={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
 						description={""}
 					/>

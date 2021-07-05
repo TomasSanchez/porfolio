@@ -18,26 +18,26 @@ export default function Home() {
 				</div>
 				<div className='flex-1  flex flex-col '>
 					<Main
-						url={"www.salame.com"}
+						url={""}
 						img={"/testing_img.png"}
 						description={"some website using this and that"}
 					/>
 					<Main
-						url={"www.salame.com"}
+						url={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
 						description={"some website using this and that"}
 					/>
 				</div>
 				<div className='flex-1 flex flex-col '>
 					<Main
-						url={"www.salame.com"}
+						url={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
-						description={"some website using this and that"}
+						description={""}
 					/>
 					<Main
-						url={"www.salame.com"}
+						url={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
-						description={"some website using this and that"}
+						description={""}
 					/>
 				</div>
 				<div className='flex-1 flex flex-col w-1/4'></div>

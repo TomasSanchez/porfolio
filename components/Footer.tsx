@@ -20,6 +20,7 @@ const Footer = () => {
 					<span className='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
 						<a
 							href='https://github.com/TomasSanchez'
+							rel="noopener noreferrer"
 							target='_blank'
 							className='ml-3 text-gray-400'>
 							<svg
@@ -33,6 +34,7 @@ const Footer = () => {
 						</a>
 						<a
 							href='//www.linkedin.com/in/tomassolanosanchez'
+							rel="noopener noreferrer"
 							target='_blank'
 							className='ml-3 text-gray-200 mr-16'>
 							<svg

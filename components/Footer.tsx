@@ -11,6 +11,7 @@ const Footer = () => {
 						© 2021 TomasSanchez
 						<a
 							href='https://github.com/TomasSanchez'
+							rel="noopener noreferrer"
 							className='text-gray-500 ml-1'
 							target='_blank'
 							rel='noopener noreferrer'>

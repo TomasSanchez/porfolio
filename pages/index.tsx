@@ -25,12 +25,12 @@ export default function Home() {
 							"e-commerce website built with django rest, and react in nextJs. In development"
 						}
 					/>
-					<Main
+<!-- 					<Main
 						url={""}
 						url_as={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
 						description={""}
-					/>
+					/> -->
 				</div>
 				<div className='flex-1 flex flex-col '>
 					<Main
@@ -41,12 +41,12 @@ export default function Home() {
 							"Blog using Django and Next. In development"
 						}
 					/>
-					<Main
+<!-- 					<Main
 						url={""}
 						url_as={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
 						description={""}
-					/>
+					/> -->
 				</div>
 				<div className='flex-1 flex flex-col w-1/4'></div>
 			</div>

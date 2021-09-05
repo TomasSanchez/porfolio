@@ -14,7 +14,7 @@ const Footer = () => {
 							rel="noopener noreferrer"
 							className='text-gray-500 ml-1'
 							target='_blank'
-							rel='noopener noreferrer'>
+							>
 							@TomasSanchez
 						</a>
 					</p>

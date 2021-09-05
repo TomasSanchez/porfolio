@@ -7,10 +7,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Tomas's Portfolio</title>
-				<meta
-					name='viewport'
-					content='initial-scale=1.0, width=device-width'
-				/>
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 			<div className='flex flex-col md:flex-row bg-gray-800 pt-4 justify-self-stretch'>
 				<div className=' md:border-r-2 border-green-700 flex-1 max-w-md justify-center md:block m-auto md:mt-1'>
@@ -21,32 +18,28 @@ export default function Home() {
 						url={"https://github.com/TomasSanchez/Django-Ecommerce"}
 						url_as={"github"}
 						img={"/Ecommerce.png"}
-						description={
-							"e-commerce website built with django rest, and react in nextJs. In development"
-						}
+						description={"e-commerce website built with django rest, and react in nextJs. In development"}
 					/>
-<!-- 					<Main
+					{/* <Main
 						url={""}
 						url_as={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
 						description={""}
-					/> -->
+					/> */}
 				</div>
 				<div className='flex-1 flex flex-col '>
 					<Main
 						url={"https://github.com/TomasSanchez/Django-BasicBlog"}
 						url_as={"github"}
 						img={"Blog Home.png"}
-						description={
-							"Blog using Django and Next. In development"
-						}
+						description={"Blog using Django and Next. In development"}
 					/>
-<!-- 					<Main
+					{/* <Main
 						url={""}
 						url_as={""}
 						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
 						description={""}
-					/> -->
+					/> */}
 				</div>
 				<div className='flex-1 flex flex-col w-1/4'></div>
 			</div>

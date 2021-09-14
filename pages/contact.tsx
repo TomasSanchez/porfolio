@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { SyntheticEvent } from "react";
 import { useState } from "react";
+import EmailService from "../components/email-service";
 
 type formType = {
 	email: string;
@@ -9,12 +10,14 @@ type formType = {
 };
 
 const Contact = () => {
-	const [Ok, toggleOk] = useState(true);
+	const [Ok, toggleOk] = useState(false);
 	const [emailForm, setEmailForm] = useState<formType>({
 		email: "",
 		subject: "",
 		message: "",
 	});
+
+	console.log(Ok);
 
 	const inputSanitazion: () => boolean = () => {
 		return (
@@ -30,20 +33,16 @@ const Contact = () => {
 		);
 	};
 
-	const handleSubmit = async (e: SyntheticEvent) => {
+	const sendMail = async (e: SyntheticEvent) => {
 		e.preventDefault();
-		const res = await fetch("/api/mail", {
-			method: "POST",
-			body: JSON.stringify(emailForm),
-		});
-		if (res.ok) {
-			console.log("succes");
+		const succes = await EmailService.sendEmail(emailForm);
+		toggleOk(succes!);
+		if (succes) {
 			setEmailForm({
 				email: "",
 				subject: "",
 				message: "",
 			});
-			toggleOk(true);
 		}
 	};
 
@@ -51,43 +50,32 @@ const Contact = () => {
 		<div>
 			<Head>
 				<title>Contact</title>
-				<meta
-					name='viewport'
-					content='initial-scale=1.0, width=device-width'
-				/>
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 			<section className='text-gray-400 bg-gray-800 body-font relative '>
 				<div className='container px-5 py-10 mt-6 mx-auto'>
 					<div className='flex flex-col text-center w-full mb-12'>
-						<h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white'>
-							Contact Me
-						</h1>
+						<h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white'>Contact Me</h1>
 						<p className='lg:w-2/3 mx-auto text-base text-gray-300'>
-							Simply fill in the form with your email and message
-							and will be in contact. Alterantivly you can contact
-							me on linkedin or mail
+							Simply fill in the form with your email and message and will be in contact. Alterantivly you
+							can contact me on linkedin or email
 						</p>
 					</div>
 					<div className='lg:w-1/2 md:w-2/3 mx-auto'>
-						{/* FIX mails and delete warning */}
 						<div
 							hidden={!Ok}
-							className='text-center text-lg rounded-lg bg-red-400 w-1/2 m-auto text-black mb-1 py-2'>
-							Currently form contanct is under development. Sorry!
-						</div>
-						{/* end of warning */}
-						<div
-							hidden={true}
-							// hidden={!Ok}
 							className='text-center text-lg rounded-lg bg-green-400 w-1/3 m-auto text-black mb-1 py-1'>
 							Sent!
+						</div>
+						<div
+							hidden={!(Ok === undefined)}
+							className='text-center text-lg rounded-lg bg-red-400 w-2/3 m-auto text-black mb-1 p-2'>
+							There was an error, please try again later or contact me via email!
 						</div>
 						<div className='flex flex-wrap -m-2'>
 							<div className='p-2 w-1/2'>
 								<div className='relative'>
-									<label
-										htmlFor='email'
-										className='leading-7 text-sm text-gray-200'>
+									<label htmlFor='email' className='leading-7 text-sm text-gray-200'>
 										Email
 									</label>
 									<input
@@ -107,9 +95,7 @@ const Contact = () => {
 							</div>
 							<div className='p-2 w-1/2'>
 								<div className='relative'>
-									<label
-										htmlFor='name'
-										className='leading-7 text-sm text-gray-200'>
+									<label htmlFor='name' className='leading-7 text-sm text-gray-200'>
 										Subject
 									</label>
 									<input
@@ -129,9 +115,7 @@ const Contact = () => {
 							</div>
 							<div className='p-2 w-full'>
 								<div className='relative'>
-									<label
-										htmlFor='message'
-										className='leading-7 text-sm text-gray-200'>
+									<label htmlFor='message' className='leading-7 text-sm text-gray-200'>
 										Message
 									</label>
 									<textarea
@@ -151,7 +135,7 @@ const Contact = () => {
 							<div className='pt-2 w-full'>
 								<button
 									disabled={!inputSanitazion()}
-									onClick={handleSubmit}
+									onClick={sendMail}
 									className='flex mx-auto text-white bg-green-700 border-0 p-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
 									Send
 								</button>

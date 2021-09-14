@@ -57,8 +57,8 @@ const Contact = () => {
 					<div className='flex flex-col text-center w-full mb-12'>
 						<h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white'>Contact Me</h1>
 						<p className='lg:w-2/3 mx-auto text-base text-gray-300'>
-							Simply fill in the form with your email and message and will be in contact. Alterantivly you
-							can contact me on linkedin or email
+							Simply fill in the form with your email and message and will be in contact. Alternatively
+							you can contact me on linkedin or email.
 						</p>
 					</div>
 					<div className='lg:w-1/2 md:w-2/3 mx-auto'>

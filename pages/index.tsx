@@ -18,7 +18,7 @@ export default function Home() {
 						url={"https://github.com/TomasSanchez/Django-Ecommerce"}
 						url_as={"github"}
 						img={"/Ecommerce.png"}
-						description={"e-commerce website built with django rest, and react in nextJs. In development"}
+						description={"E-commerce website built with Django rest, and NextJs. In development"}
 					/>
 					{/* <Main
 						url={""}
@@ -32,7 +32,7 @@ export default function Home() {
 						url={"https://github.com/TomasSanchez/Django-BasicBlog"}
 						url_as={"github"}
 						img={"Blog Home.png"}
-						description={"Blog using Django and Next. In development"}
+						description={"Twitter-Like Blog using Django and React. In development"}
 					/>
 					{/* <Main
 						url={""}

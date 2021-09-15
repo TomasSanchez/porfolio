@@ -57,8 +57,8 @@ const Contact = () => {
 					<div className='flex flex-col text-center w-full mb-12'>
 						<h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-white'>Contact Me</h1>
 						<p className='lg:w-2/3 mx-auto text-base text-gray-300'>
-							Simply fill in the form with your email and message and will be in contact. Alternatively
-							you can contact me on linkedin or email.
+							Leave me a message and i will be in touch! <br />
+							Alternatively you can contact me on linkedin or email.
 						</p>
 					</div>
 					<div className='lg:w-1/2 md:w-2/3 mx-auto'>
@@ -136,7 +136,7 @@ const Contact = () => {
 								<button
 									disabled={!inputSanitazion()}
 									onClick={sendMail}
-									className='flex mx-auto text-white bg-green-700 border-0 p-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
+									className='flex mx-auto text-white bg-green-600 border-0 p-2 px-8 focus:outline-none hover:bg-green-500 rounded text-lg'>
 									Send
 								</button>
 							</div>

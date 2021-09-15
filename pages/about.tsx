@@ -5,10 +5,7 @@ const About = () => {
 		<div>
 			<Head>
 				<title>About</title>
-				<meta
-					name='viewport'
-					content='initial-scale=1.0, width=device-width'
-				/>
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 
 			<section className='text-gray-400 bg-gray-800 body-font'>
@@ -22,11 +19,14 @@ const About = () => {
 							Tomas Solano Sanchez
 						</h1>
 						<p className='leading-relaxed mb-8 text-gray-300'>
-							Systems Engineering student, Backend developer,
-							Studying Data Science on my free time. Looking for a
-							remote backend developer job. Junior/mid. Born and
-							currently living in Argentina, German citizenship,
-							looking forward to moving abroad
+							Hi! Im Tomas Sanchez, currently based in Argentina. Im a Systems Engineer student, currently
+							working as a freelancer on my free time building full stack web applications. I've been
+							programming for the past 2 years with a focus on python and backend development and for the
+							past year integrating frontend technologies. As a freelancer I have the ability not only to
+							code but to be in a group project, focus on all the areas of a full stack application such
+							as Ci/Cd, Cloud Technologies, backend, frontend, UX/UI design and to be focused on what the
+							client wants. Although im currently working on my own, im looking for a full-time remote
+							job.
 						</p>
 						<div className='flex justify-center'></div>
 					</div>

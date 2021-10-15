@@ -20,12 +20,12 @@ export default function Home() {
 						img={"/Ecommerce.png"}
 						description={"E-commerce website built with Django rest, and NextJs. In development"}
 					/>
-					{/* <Main
-						url={""}
-						url_as={""}
-						img={"https://dummyimage.com/1900x1000/000000/fff.png"}
-						description={""}
-					/> */}
+					<Main
+						url={"https://randomleplants.com"}
+						url_as={"randomleplants.com"}
+						img={"RandomLeplants.png"}
+						description={"Blog for random ideas and thoughts. Built with Gatsby & Typescript"}
+					/>
 				</div>
 				<div className='flex-1 flex flex-col '>
 					<Main
